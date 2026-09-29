@@ -1,0 +1,37 @@
+# ╔══════════════════════════════════════════════════════════════════╗
+# ║   Traffic Flow & Speed Analytics System — requirements.txt      ║
+# ║   Pinned for Python 3.11 / CUDA 12.1 compatibility             ║
+# ║   Install: pip install -r requirements.txt                      ║
+# ╚══════════════════════════════════════════════════════════════════╝
+
+# ── Deep learning & CV ────────────────────────────────────────────
+# torch: CPU-only wheel (swap index URL for CUDA build — see comment)
+# For CUDA 12.1:  pip install torch==2.3.1 --index-url https://download.pytorch.org/whl/cu121
+torch==2.3.1
+torchvision==0.18.1
+
+# YOLOv8 object detection (pins torch compat range internally)
+ultralytics==8.2.87
+
+# ByteTrack + annotation utilities bundled with supervision
+supervision==0.22.0
+
+# OpenCV — headless build (no GUI, suitable for Docker / server)
+opencv-python-headless==4.10.0.84
+
+# ── Data & numerics ───────────────────────────────────────────────
+numpy==1.26.4
+pandas==2.2.2
+
+# ── Streamlit dashboard ───────────────────────────────────────────
+streamlit==1.37.1
+
+# ── Interactive charts ────────────────────────────────────────────
+plotly==5.23.0
+
+# ── Utilities ─────────────────────────────────────────────────────
+# Pillow required by streamlit's st.image for JPEG decode
+Pillow==10.4.0
+
+# watchdog: faster file-change detection for streamlit dev reload
+watchdog==4.0.1

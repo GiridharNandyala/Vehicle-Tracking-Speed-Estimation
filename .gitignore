@@ -1,0 +1,31 @@
+# API Keys & Sensitive Data
+.env
+
+# Virtual Environment
+venv/
+env/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# ML Models & Heavy Files (Github limit 100MB)
+*.pt
+*.onnx
+*.weights
+
+# Project Output Reports & Logs
+traffic_logs.csv
+*.pdf
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Database Files
+*.db
+*.db-shm
+*.db-wal
+
+# Alerts Snapshots
+alerts/
