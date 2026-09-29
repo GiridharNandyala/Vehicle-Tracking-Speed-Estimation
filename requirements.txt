@@ -6,7 +6,7 @@ pandas
 streamlit
 plotly
 Pillow
-fpdf
+reportlab
 google-genai
 google-generativeai
 requests
