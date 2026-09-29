@@ -1,21 +1,11 @@
-# ── Deep learning & CV ────────────────────────────────────────────
-ultralytics>=8.2.87
-supervision>=0.22.0
-opencv-python-headless>=4.10.0.84
-
-# ── Data & numerics ───────────────────────────────────────────────
-numpy>=1.26.4,<2.0.0
-pandas>=2.2.2
-
-# ── Streamlit dashboard ───────────────────────────────────────────
-streamlit>=1.37.1
-
-# ── Interactive charts ────────────────────────────────────────────
-plotly>=5.23.0
-
-# ── Utilities ─────────────────────────────────────────────────────
-Pillow>=10.4.0
-watchdog>=4.0.1
+ultralytics
+supervision
+opencv-python-headless
+numpy
+pandas
+streamlit
+plotly
+Pillow
 fpdf
 google-generativeai
 requests
