@@ -31,7 +31,8 @@ def generate_pdf_report(summary_stats: dict, logs_df: pd.DataFrame) -> bytes:
         spaceAfter=12
     )
     
-    elements.append(Paragraph("🚦 Traffic Flow & Executive Analytics Report", title_style))
+    # Removed emoji '🚦' to prevent ReportLab font encoding crashes
+    elements.append(Paragraph("Traffic Flow & Executive Analytics Report", title_style))
     elements.append(Spacer(1, 10))
 
     summary_data = [
@@ -58,17 +59,23 @@ def generate_pdf_report(summary_stats: dict, logs_df: pd.DataFrame) -> bytes:
     elements.append(Paragraph("Recent Vehicle Log Sample", styles['Heading2']))
     elements.append(Spacer(1, 8))
 
-    if not logs_df.empty:
-        sample_df = logs_df.head(10)[['id', 'vehicle_type', 'speed_kmh', 'direction', 'is_speeding']]
+    if logs_df is not None and not logs_df.empty:
+        # Safely extract columns if present
+        cols = ['id', 'vehicle_type', 'speed_kmh', 'direction', 'is_speeding']
+        available_cols = [c for c in cols if c in logs_df.columns]
+        
+        sample_df = logs_df.head(10)
         table_content = [["ID", "Class", "Speed (km/h)", "Direction", "Speeding?"]]
+        
         for _, r in sample_df.iterrows():
             table_content.append([
                 str(r.get('id', '')),
-                str(r.get('vehicle_type', '')),
-                f"{r.get('speed_kmh', 0):.1f}" if pd.notnull(r.get('speed_kmh')) else "N/A",
+                str(r.get('vehicle_type', r.get('class', ''))),
+                f"{float(r.get('speed_kmh', 0)):.1f}" if pd.notnull(r.get('speed_kmh')) else "N/A",
                 str(r.get('direction', '')),
                 "YES" if r.get('is_speeding') else "NO"
             ])
+            
         t_logs = Table(table_content, colWidths=[50, 100, 100, 100, 90])
         t_logs.setStyle(TableStyle([
             ('BACKGROUND', (0,0), (-1,0), colors.HexColor('#58a6ff')),
@@ -79,6 +86,7 @@ def generate_pdf_report(summary_stats: dict, logs_df: pd.DataFrame) -> bytes:
         elements.append(t_logs)
 
     doc.build(elements)
+    buffer.seek(0)
     pdf_val = buffer.getvalue()
     buffer.close()
     return pdf_val
