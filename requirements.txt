@@ -1,22 +1,21 @@
 # ── Deep learning & CV ────────────────────────────────────────────
-# Let Ultralytics manage CPU Torch installation lightweightly on Streamlit Cloud
-ultralytics==8.2.87
-supervision==0.22.0
-opencv-python-headless==4.10.0.84
+ultralytics>=8.2.87
+supervision>=0.22.0
+opencv-python-headless>=4.10.0.84
 
 # ── Data & numerics ───────────────────────────────────────────────
-numpy==1.26.4
-pandas==2.2.2
+numpy>=1.26.4,<2.0.0
+pandas>=2.2.2
 
 # ── Streamlit dashboard ───────────────────────────────────────────
-streamlit==1.37.1
+streamlit>=1.37.1
 
 # ── Interactive charts ────────────────────────────────────────────
-plotly==5.23.0
+plotly>=5.23.0
 
 # ── Utilities ─────────────────────────────────────────────────────
-Pillow==10.4.0
-watchdog==4.0.1
+Pillow>=10.4.0
+watchdog>=4.0.1
 fpdf
 google-generativeai
 requests
