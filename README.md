@@ -56,14 +56,16 @@ An AI-powered end-to-end Computer Vision dashboard built with **YOLOv8**, **Byte
 
    4.Run the Streamlit Dashboard:
    streamlit run app.py
+
    
 🎥 System Workflow
-Video Ingestion: Upload video file or connect live webcam / RTSP stream.
 
-Object Tracking & Analytics: Detects vehicles, updates metric counters, computes speed vectors, and plots charts.
+1.Video Ingestion: Upload video file or connect live webcam / RTSP stream.
 
-Violation Capture & Alerting: Triggers snapshot capture and sends Telegram alerts if vehicle speed exceeds threshold.
+2.Object Tracking & Analytics: Detects vehicles, updates metric counters, computes speed vectors, and plots charts.
 
-AI Recommendation: Click Generate Gemini Insight for AI-driven safety management advice.
+3.Violation Capture & Alerting: Triggers snapshot capture and sends Telegram alerts if vehicle speed exceeds threshold.
 
-Report Generation: Download traffic_logs.csv or traffic_executive_report.pdf anytime.
+4.AI Recommendation: Click Generate Gemini Insight for AI-driven safety management advice.
+
+5.Report Generation: Download traffic_logs.csv or traffic_executive_report.pdf anytime.
