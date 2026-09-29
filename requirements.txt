@@ -7,5 +7,6 @@ streamlit
 plotly
 Pillow
 fpdf
+google-genai
 google-generativeai
 requests
