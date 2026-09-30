@@ -3,6 +3,10 @@
 An AI-powered end-to-end Computer Vision dashboard built with **YOLOv8**, **ByteTrack**, **ANPR OCR**, **Streamlit**, and **Google Gemini AI**. This system automatically monitors traffic flow, detects speed violations, extracts license plate numbers, sends instant Telegram alerts, generates executive PDF reports, and provides real-time AI safety insights.
 
 ---
+### 🌐 Quick Links & Demo, Click here 
+[![Live App Demo](https://img.shields.io/badge/🚀_Live_Demo-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://giridhar-vehicle-tracking-speed-estimation.streamlit.app/)
+[![LinkedIn Post](https://img.shields.io/badge/🔗_LinkedIn-Post_&_Demo-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/posts/giridhar-nandyala-5758662b2_computervision-yolov8-deeplearning-ugcPost-7511042829247348736-MGMT/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEs70akBeCLfAOvC2nnAC0kHj16JNBTXqJM)
+---
 
 ## ✨ Key Features
 
