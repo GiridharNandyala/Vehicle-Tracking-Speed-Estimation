@@ -5,7 +5,7 @@ An AI-powered end-to-end Computer Vision dashboard built with **YOLOv8**, **Byte
 ---
 ### 🌐 Quick Links & Demo, Click here 
 [![Live App Demo](https://img.shields.io/badge/🚀_Live_Demo-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://giridhar-vehicle-tracking-speed-estimation.streamlit.app/)
-[![LinkedIn Post](https://img.shields.io/badge/🔗_LinkedIn-Post_&_Demo-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/posts/giridhar-nandyala-5758662b2_computervision-yolov8-deeplearning-ugcPost-7511042829247348736-MGMT/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEs70akBeCLfAOvC2nnAC0kHj16JNBTXqJM)
+[![LinkedIn Post](https://img.shields.io/badge/🔗_LinkedIn-Post_&_Demo-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/posts/giridhar-nandyala-5758662b2_computervision-yolov8-deeplearning-ugcPost-7511379678318907392-0WgH/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEs70akBeCLfAOvC2nnAC0kHj16JNBTXqJM)
 ---
 
 ## ✨ Key Features
